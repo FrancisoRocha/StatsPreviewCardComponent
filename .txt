@@ -1,0 +1,108 @@
+Get insights that help your business grow.
+
+Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+experience, and overall efficiency.
+
+10k+ companies
+314 templates
+12m+ queries
+
+
+
+.card{
+    background-color: var(--bgCard);
+    width: 32rem;
+    height: 78rem;
+    margin: 8.8rem auto;
+}
+
+@media(min-width: 768px){
+    .card{
+        width: 70rem;
+        height: 44.6rem;
+        margin: 17rem auto;
+    }
+}
+
+@media(min-width: 992px){
+    .card{
+        width: 110rem;
+        height: 44.6rem;
+        margin: 17rem auto;
+    }
+}
+
+/* GRID */
+
+.card__grid{
+    display: grid;
+}
+
+/* CONTENIDO */
+
+.card__title{
+    font-family: var(--fuenteInter);
+    color: var(--colorFuente);
+    font-size: 2.8rem;
+    line-height: 3.2;
+    font-weight: 700;
+}
+
+@media(min-width: 768px){
+    .card__title{
+        font-size: 3.5rem;
+        line-height: 4.4;
+    }
+}
+
+.card__title span{
+    color: var(--bgImage);
+}
+
+.card__texto{
+    font-family: var(--fuenteInter);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5;
+    color: var(--colorTexto);
+}
+
+.card__datos{
+    font-family: var(--fuenteInter);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--colorFuente);
+}
+.card__datos span{
+    color: var(--texto);
+    font-family: var(--fuenteLexend);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+ <div class="card__imagen">
+          <img src="./images/image-header-desktop.jpg" alt="imagen">
+        </div>
+        <div class="card__contenido">
+          <h2 class="card__title">Get <span>insights</span> that help your business grow.</h2>
+          <p class="card__texto">
+            Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+            experience, and overall efficiency.
+          </p>
+          <!-- DATOS -->
+          <div class="card__info">
+            <p class="card__datos">10k+ <span>companies</span></p>
+            <p class="card__datos">314 <span>templates</span></p>
+            <p class="card__datos">12m+ <span>queries</span></p>
+          </div>
+        </div>

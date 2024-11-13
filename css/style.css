@@ -1,0 +1,226 @@
+:root{
+    --fuenteInter: "Inter", sans-serif;
+    --fuenteLexend: "Lexend Deca", serif;
+    --bgColor: hsl(233, 47%, 7%);
+    --bgCard: hsl(244, 38%, 16%);
+    --bgImage: hsl(277, 64%, 61%);
+    --colorFuente: hsl(0, 0%, 100%);
+    --colorTexto: hsla(0, 0%, 100%, 0.75);
+    --texto: hsla(0, 0%, 100%, 0.6)
+
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--bgColor);
+}
+
+.card{
+    position: relative;
+    width: 32rem;
+    height: 78rem;
+    background-image: url(../images/image-header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 8.8rem auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: var(--bgCard);
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(349deg, #AB5CDB 0%, #5B3175 100%);
+    z-index: 1;
+    opacity: .7;
+}
+
+@media (min-width: 768px){
+    .card{
+        width: 50rem;
+        height: 90rem;
+    }
+    .card::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 41%;
+        background: linear-gradient(349deg, #AB5CDB 0%, #5B3175 100%);
+        z-index: 1;
+        opacity: .7;
+    }
+}
+
+@media (min-width: 1200px){
+    .card{
+        width: 110rem;
+        height: 44.6rem;
+        background-image: url(../images/image-header-desktop.jpg);
+        background-position: right;
+        background-size: 50%;
+        margin: 17rem auto;
+    }
+    .card::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(349deg, #AB5CDB 0%, #5B3175 100%);
+        z-index: 1;
+        opacity: .7;
+    }
+}
+
+.card__contenido{
+    margin-top: 23rem;
+    position: relative;
+    z-index: 2;
+}
+
+@media (min-width: 768px){
+    .card__contenido{
+        margin-top: 35rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .card__contenido{
+        margin-top: 1rem;
+    }
+}
+
+.card__title{
+    color: var(--colorFuente);
+    font-size: 2.8rem;
+    font-family: var(--fuenteInter);
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    padding: 3rem;
+    margin: 0;
+}
+.card__title span{
+    color: var(--bgImage);
+}
+
+@media (min-width: 768px){
+    .card__title{
+        font-size: 3.6rem;
+        text-align: center;
+        padding: 5rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .card__title{
+        max-width: 48rem;
+        font-size: 3.6rem;
+        font-weight: 700;
+        text-align: left;
+        line-height: 44px;
+    }
+}
+
+.card__texto{
+    color: var(--texto);
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--fuenteInter);
+    line-height: 25px;
+    text-align: center;
+    padding: 3rem;
+    margin-top: -3rem;
+}
+@media (min-width: 768px){
+    .card__texto{
+        margin-top: -4rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .card__texto{
+        width: 35rem;
+        text-align: left;
+        padding: 0;
+        margin: -2rem 5rem;
+    }
+}
+.card__info{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2rem;
+}
+
+@media (min-width: 768px){
+    .card__info{
+        margin-top: 9rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1200px){
+    .card__info{
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        margin: 9rem auto auto 5rem;
+        gap: 5rem;
+    }
+    .card__datos{
+        text-align: left;
+    }
+}
+
+.card__datos{
+    color: var(--colorFuente);
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: var(--fuenteInter);
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+@media (min-width: 1200px){
+    .card__datos{
+        text-align: left;
+    }
+}
+
+
+.card__datos span{
+    display: block;
+    font-family: var(--fuenteLexend);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--texto);
+    margin-bottom: 4rem;
+    padding-top: .3rem;
+}
+@media (min-width: 1200px){
+    .card__datos span{
+        text-align: left;
+    }
+}
